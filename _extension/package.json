@@ -13,7 +13,7 @@
         "url": "https://github.com/microsoft/typescript-go"
     },
     "engines": {
-        "vscode": "^1.100.0"
+        "vscode": "^1.96.2"
     },
     "capabilities": {
         "untrustedWorkspaces": {
@@ -40,17 +40,23 @@
                         ],
                         "default": "verbose",
                         "description": "Trace TypeScript Go server communication.",
-                        "tags": ["experimental"]
+                        "tags": [
+                            "experimental"
+                        ]
                     },
                     "typescript.native-preview.pprofDir": {
                         "type": "string",
                         "description": "Directory to write pprof profiles to.",
-                        "tags": ["experimental"]
+                        "tags": [
+                            "experimental"
+                        ]
                     },
                     "typescript.native-preview.tsdk": {
                         "type": "string",
                         "description": "Path to the @typescript/native-preview package or tsgo binary directory. If not specified, the extension will look for it in the default location.",
-                        "tags": ["experimental"]
+                        "tags": [
+                            "experimental"
+                        ]
                     }
                 }
             }
@@ -88,14 +94,7 @@
             }
         ]
     },
-    "main": "./dist/extension.js",
-    "files": [
-        "dist/extension.bundle.js",
-        "lib",
-        "LICENSE",
-        "NOTICE.txt",
-        "logo.png"
-    ],
+    "main": "./dist/extension.bundle.js",
     "scripts": {
         "build": "tsc",
         "watch": "tsc --watch",
@@ -105,8 +104,9 @@
         "vscode-languageclient": "^9.0.1"
     },
     "devDependencies": {
-        "@types/vscode": "^1.100.0",
+        "@types/vscode": "^1.96.2",
         "@vscode/vsce": "^3.3.2",
-        "esbuild": "^0.25.2"
+        "esbuild": "^0.25.2",
+        "typescript": "^5.8.3"
     }
 }

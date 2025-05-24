@@ -1,0 +1,48 @@
+# Source files - exclude since we're using the bundle
+src/**
+*.ts
+tsconfig.json
+
+# Build artifacts we don't need in the package
+dist/*.js
+dist/*.map
+!dist/extension.bundle.js
+
+# Development files
+node_modules/**
+.vscode/**
+.git/**
+.gitignore
+.gitmodules
+.golangci.yml
+.gulp.js
+.dprint.jsonc
+.gitattributes
+.custom-gcl.yml
+
+# Parent directory files we don't need
+../**
+
+# Other files we don't need
+testdata/**
+internal/**
+cmd/**
+_tools/**
+_packages/**
+_submodules/**
+_build/**
+.devcontainer/**
+.github/**
+*.lock
+*.mod
+*.sum
+package-lock.json
+bun.lock
+Herebyfile.mjs
+CHANGES.md
+CODE_OF_CONDUCT.md
+SECURITY.md
+SUPPORT.md
+
+# Build files
+*.tsbuildinfo 
